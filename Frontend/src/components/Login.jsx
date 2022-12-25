@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { LoginUser, reset } from "../features/authSlice";
+import "./css/login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -25,52 +26,50 @@ const Login = () => {
   };
 
   return (
-    <section className="hero is-fullheight is-fullwidth">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns is-centered">
-            <div className="column is-4">
-              <form onSubmit={Auth} className="box">
-                {isError && <p className="has-text-centered">{message}</p>}
-                <h1 className="title is-2">Sign In</h1>
-                <div className="field">
-                  <label className="label">Email</label>
-                  <div className="control">
-                    <input
-                      type="text"
-                      className="input"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label">Password</label>
-                  <div className="control">
-                    <input
-                      type="password"
-                      className="input"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      placeholder="******"
-                    />
-                  </div>
-                </div>
-                <div className="field mt-5">
-                  <button
-                    type="submit"
-                    className="button is-success is-fullwidth"
-                  >
-                    {isLoading ? "Loading..." : "Login"}
-                  </button>
-                </div>
-              </form>
-            </div>
+      <div className="loginpage">
+      <div className="pembungkus">
+        <div className="pembungkus-form">
+          <div className="title">
+            <span>Login</span>
+            <div className="garis"></div>
           </div>
+
+          <form onSubmit={Auth}>
+            {isError && <p className="has-text-centered">{message}</p>}
+            <div className="input-field">
+              <input
+                className="input-form"
+                name="email"
+                type="email"
+                value={email}
+                onChange={(e)=>setEmail(e.target.value)}
+                placeholder="Enter email.."
+                required
+              />
+            </div>
+            <div className="input-field">
+              <input
+                name="pass"
+                className="input-form"
+                type="password"
+                value={password}
+                onChange={(e)=> setPassword(e.target.value)}
+                placeholder="Enter password.."
+                required
+              />
+            </div>
+            <div className="input-field-button">
+              <button
+                type="submit"
+                className="button-form"
+              >
+                {isLoading ? "Loading.." : "LOGIN"}
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

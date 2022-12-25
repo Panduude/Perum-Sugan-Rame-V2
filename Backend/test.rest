@@ -14,10 +14,24 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "admin@gmail.com",
+    "email": "admin2@gmail.com",
     "password": "123456"
 }
 
 ###
-GET http://localhost:5000/me HTTP/1.1
+GET http://localhost:5000/berita HTTP/1.1
+Content-Type: application/json
+
+
+###
+POST http://localhost:5000/berita
+Content-Type: application/json
+
+{
+    "title": "Sampah Menumpuk",
+    "content": "Diduga mamang tukang sampah digaji dibawah UMR, si mamang melakukan mogok kerja yang membuat sampah di perum sugan rame menumpuk"
+}
+
+###
+GET http://localhost:5000/berita/edfe0647-b4ad-4ac3-917b-e4ab78aa0d33
 Content-Type: application/json
