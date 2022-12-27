@@ -10,7 +10,7 @@ import { verifyUser } from "../middleware/AuthUser.js";
 const router = express.Router();
  
 router.get('/berita', verifyUser, getAllBeritas);
-router.get('/berita/:id', getBeritaById);
+router.get('/berita/detail/:id', getBeritaById);
 router.post('/berita', createBerita);
 router.delete('/berita/:id', deleteBerita);
 // router.patch('/:id', updateProduct);

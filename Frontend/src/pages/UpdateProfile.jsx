@@ -1,29 +1,29 @@
-// import React, { useEffect } from "react";
-// import Layout from "./Layout";
-// import UpdateProfile from "../components/UpdateProfile";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useNavigate } from "react-router-dom";
-// import { getMe } from "../features/authSlice";
+import React, { useEffect } from "react";
+import Layout from "./Layout";
+import FormUpdateProfile from "../components/FormUpdateProfile";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { getMe } from "../features/authSlice";
 
-// const UpdateProfile = () => {
-//   const dispatch = useDispatch();
-//   const navigate = useNavigate();
-//   const { isError } = useSelector((state) => state.auth);
+const UpdateProfile = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { isError } = useSelector((state) => state.auth);
 
-//   useEffect(() => {
-//     dispatch(getMe());
-//   }, [dispatch]);
+  useEffect(() => {
+    dispatch(getMe());
+  }, [dispatch]);
 
-//   useEffect(() => {
-//     if (isError) {
-//       navigate("/");
-//     }
-//   }, [isError, navigate]);
-//   return (
-//     <Layout>
-//       <UpdateProfile />
-//     </Layout>
-//   );
-// };
+  useEffect(() => {
+    if (isError) {
+      navigate("/");
+    }
+  }, [isError, navigate]);
+  return (
+    <Layout>
+      <FormUpdateProfile />
+    </Layout>
+  );
+};
 
-// export default UpdateProfile;
+export default UpdateProfile;

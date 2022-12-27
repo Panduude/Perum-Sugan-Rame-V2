@@ -17,10 +17,13 @@ const BeritaList = () => {
   return (
     <div className="container">
       {beritas.map((berita) => (
-        <div className="card-body">
+        <div className="card-body" key={berita.uuid}>
           <p>{berita.title}</p>
-          <img ></img>
-          <p>{berita.content}</p>
+          <img srcSet={berita.gambar}></img>
+          <p>{berita.deskripsi}</p>
+          <Link to={`/berita/detail/${berita.uuid}`}>
+            <button className="btn-detail">Details..</button>
+          </Link>
         </div>
       ))}
     </div>

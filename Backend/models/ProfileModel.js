@@ -44,7 +44,7 @@ const Profile = db.define('profile',{
         }
     },
     birthDate:{
-        type: DataTypes.DATE,
+        type: DataTypes.STRING,
         allowNull: false,
         validate:{
             notEmpty: true

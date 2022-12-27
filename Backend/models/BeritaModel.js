@@ -25,7 +25,20 @@ const Berita = db.define('berita', {
         allowNull: false,
         validate:{
             notEmpty: true,
-            len: [3, 500]
+        }
+    },
+    deskripsi:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate:{
+            notEmpty: true,
+        }
+    },
+    gambar:{
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate:{
+            notEmpty: true,
         }
     }
 },{

@@ -18,7 +18,7 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "warga@gmail.com",
+    "email": "admin@gmail.com",
     "password": "123456"
 }
 
@@ -43,8 +43,10 @@ POST http://localhost:5000/berita
 Content-Type: application/json
 
 {
-    "title": "Sampah Menumpuk",
-    "content": "Diduga mamang tukang sampah digaji dibawah UMR, si mamang melakukan mogok kerja yang membuat sampah di perum sugan rame menumpuk"
+    "title": "Kucing Hilang",
+    "deskripsi": "Memasuki musim kawin, kucing bu sarminah yaitu anabul diduga hilang dari rumah untuk memenuhi hasratnya",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas tortor eu lectus feugiat tempor. Proin facilisis libero et nisi cursus efficitur. Maecenas in tincidunt massa. Duis pellentesque, ipsum id dignissim dignissim, dui elit tincidunt justo, vitae sollicitudin libero nisi interdum eros. Donec volutpat in erat nec tempor. Donec ullamcorper aliquet mi, at auctor nisi gravida non. Cras feugiat elementum elit, et semper sem eleifend at. Aliquam id nisi quis nisl accumsan egestas. Mauris id leo nisi. Morbi id enim at augue dapibus ultricies id id lectus. Integer ac leo elit. Duis consequat, ex vel semper feugiat, mauris dui interdum metus, ac egestas arcu ante a nulla. Sed non mi augue. Aenean porta est faucibus sapien auctor, id imperdiet ligula convallis. Nulla sit amet nisi nec quam elementum sodales. Donec et neque dui. Nulla vel lacus at metus tempor ultricies quis sed diam. Aenean aliquet facilisis arcu, sed condimentum lectus auctor ut. Donec dapibus risus eget tellus bibendum porttitor. In odio elit, ornare ut tellus ut, dictum mattis massa. Donec euismod est id nunc convallis, nec iaculis lorem consectetur. Suspendisse tristique enim ac consectetur maximus. Aenean nec lobortis tellus. Integer fringilla diam sodales arcu rhoncus suscipit a quis nisi. Vestibulum eu sapien ut arcu ornare ornare non non urna. In non eleifend ex, vitae feugiat turpis. Proin aliquam tempor convallis. Praesent a urna dui. Fusce tempus erat ligula, ac sollicitudin lectus condimentum eget. Cras est nibh, imperdiet id faucibus sit amet, venenatis vel orci. Morbi vitae nulla at dui semper fringilla sed nec lorem.",
+    "gambar": "https://www.kucinglucu.net/wp-content/uploads/2018/05/kucing-ngeselin07.jpg"
 }
 
 ###

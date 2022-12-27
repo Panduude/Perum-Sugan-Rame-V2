@@ -240,7 +240,7 @@ footer {
 .card-body img {
   display: block;
   margin: 20px 20px 0px 20px;
-  width: auto;
+  width: 320px;
   height: 250px;
   overflow: hidden;
   border: 1px solid rgb(230, 230, 230);
@@ -262,13 +262,37 @@ footer {
 } */
 
 /* Detail Berita */
+
+.btn-detail{
+  padding: 0px;
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+  float: right;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
 .container-berita {
   margin: auto;
   width: 70%;
   border: 1px solid rgb(214, 214, 214);
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
+
+.container-berita h1{
+  margin-top: 40px;
+}
+
 .img-berita {
   margin: 40px;
   width: auto;
@@ -281,6 +305,7 @@ footer {
 .content-berita {
   margin: 40px;
   justify-content: center;
+  font-size: large;
 }
 
 .img-berita img {
@@ -298,37 +323,55 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   text-align: left;
+  background-color: white;
 }
-.header-profile {
+.container-profile h1 {
   text-align: center;
-}
-
-.user-img {
-  width: 220px;
-  height: 250px;
-  margin: auto;
-  border: 1px solid rgb(230, 230, 230);
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.user-img img {
-  width: 220px;
-  height: 250px;
-  object-fit: cover;
-}
-
-.header-profile h2 {
-  font-size: 40px;
-  margin: 12px 0;
   font-family: "Pacifico";
+  color: #005033;
+  margin-top: 40px;
 }
 
-.header-profile h4 {
-  font-size: 2rem;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-family: cursive;
+.profile-data{
+  display: flexbox;
+  padding: 10px;
+  margin: 40px 50px;
+  width: 90%;
+  height: 600px;
+  font-size: large;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.profile-data tr{
+  margin-bottom: 30px;
+}
+
+.profile-data td{
+  border: solid gray 1px;
+  border-radius: 5px;
+  text-indent: 10px;
+  width: 80%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.btn-edit{
+  padding: 0px;
+  margin-top: 10px;
+  margin-right: 100px;
+  width: 140px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+  float: right;
+  font-size: 18px;
+  margin-top: 40px;
 }
 
 .header-profile button {
@@ -829,7 +872,7 @@ input[type="submit"]:hover {
   line-height: 35px;
   color: #ffffff;
 }
-.table-row {
+/* .table-row {
   display: table-row;
   text-align: center;
 }
@@ -847,8 +890,8 @@ input[type="submit"]:hover {
   border: 1px solid #ccc;
 }
 .container-cardprofile {
-  /* border: 2px red solid; */
+  border: 2px red solid;
   margin: 50px 60% 10px 3vh;
   padding: 2vh;
   font-size: 25px;
-}
+} */

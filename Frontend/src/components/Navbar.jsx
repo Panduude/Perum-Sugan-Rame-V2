@@ -23,7 +23,7 @@ const Navbar = () => {
           <li><NavLink to={'/dashboard'}>Home</NavLink></li>
           <li><NavLink to={'/berita'}>Berita</NavLink></li>
 
-          {user && user.role === "user" && (
+          {user && user.role === "warga" && (
           <div>
           <li><NavLink to={''}>Pembayaran</NavLink></li>
           </div>

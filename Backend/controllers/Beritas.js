@@ -3,7 +3,7 @@ import Berita from "../models/BeritaModel.js"
 export const getAllBeritas = async (req, res) => {
     try {
         const beritas = await Berita.findAll({
-            attributes:['uuid', 'title', 'content']
+            attributes:['uuid', 'title', 'content', 'deskripsi', 'gambar']
         });
         res.status(200).json(beritas)
     } catch (error) {
@@ -25,11 +25,13 @@ export const getBeritaById = async(req, res) =>{
 }
 
 export const createBerita = async(req, res) =>{
-    const {title, content} = req.body;
+    const {title, content, deskripsi, gambar} = req.body;
     try {
         await Berita.create({
             title: title,
             content: content,
+            deskripsi: deskripsi,
+            gambar: gambar,
             userId: req.userId
         });
         res.status(201).json({msg: "Berita Berhasil Dibuat"});
