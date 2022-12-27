@@ -35,3 +35,11 @@ Content-Type: application/json
 ###
 GET http://localhost:5000/berita/edfe0647-b4ad-4ac3-917b-e4ab78aa0d33
 Content-Type: application/json
+
+###
+POST http://localhost:5000/perintah
+Content-Type: application/json
+
+{
+    "perintah": "meuli baso"
+}

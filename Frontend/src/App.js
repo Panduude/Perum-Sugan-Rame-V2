@@ -9,6 +9,12 @@ import AddProduct from "./pages/AddProduct";
 import EditProduct from "./pages/EditProduct";
 import Berita from "./pages/Berita";
 
+import InputPerintah from "./pages/InputPerintah";
+import AddPerintah from "./pages/AddPerintah";
+import EditPerintah from "./pages/EditPerintah";
+
+
+
 function App() {
   return (
     <div>
@@ -22,6 +28,12 @@ function App() {
           <Route path="/products/add" element={<AddProduct />} />
           <Route path="/products/edit/:id" element={<EditProduct />} />
           <Route path="/berita" element={<Berita />} />
+
+          <Route path="/perintah" element={<InputPerintah />} />
+          <Route path="/perintah/add" element={<AddPerintah />} />
+          <Route path="/perintah/edit/:id" element={<EditPerintah />} />
+
+
         </Routes>
       </BrowserRouter>
     </div>

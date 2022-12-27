@@ -22,9 +22,22 @@ const Navbar = () => {
         <ul>
           <li><NavLink to={'/dashboard'}>Home</NavLink></li>
           <li><NavLink to={'/berita'}>Berita</NavLink></li>
-          <li><NavLink to={''}>Approve Keuangan</NavLink></li>
-          <li><NavLink to={''}>Buat Akun</NavLink></li>
-          <li><NavLink to={''}>Buat Perintah</NavLink></li>
+
+          {user && user.role === "user" && (
+          <div>
+          <li><NavLink to={''}>Pembayaran</NavLink></li>
+          </div>
+          )}
+
+          {user && user.role === "admin" && (
+          <div>
+          <li><NavLink to={''}>Approve Pembayaran</NavLink></li>
+          <li><NavLink to={''}>Kelola Keuangan</NavLink></li>
+          <li><NavLink to={'/users'}>Buat Akun</NavLink></li>
+          <li><NavLink to={'/perintah'}>Buat Perintah</NavLink></li>
+          </div>
+          )}
+          
           <li><NavLink to={''}>Profile</NavLink></li>
           <li className="">
                 <button className="button-nav" onClick={logout} >
