@@ -8,6 +8,7 @@ import UserRoute from "./routes/UserRoute.js";
 import ProductRoute from "./routes/ProductRoute.js";
 import BeritaRoute from "./routes/BeritaRoute.js"
 import AuthRoute from "./routes/AuthRoute.js";
+import profileRoute from "./routes/ProfileRoute.js"
 dotenv.config();
 
 
@@ -39,6 +40,7 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(UserRoute);
+app.use(profileRoute);
 app.use(ProductRoute);
 app.use(BeritaRoute);
 app.use(AuthRoute);

@@ -25,10 +25,10 @@ const Navbar = () => {
           <li><NavLink to={''}>Approve Keuangan</NavLink></li>
           <li><NavLink to={''}>Buat Akun</NavLink></li>
           <li><NavLink to={''}>Buat Perintah</NavLink></li>
-          <li><NavLink to={''}>Profile</NavLink></li>
+          <li><NavLink to={'/profile'}>Profile</NavLink></li>
           <li className="">
-                <button className="button-nav" onClick={logout} >
-                  Log out
+                <button  className="button-nav" onClick={logout} >
+                  <NavLink>Log out</NavLink>
                 </button>
           </li>
         </ul>
