@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.container-user{
+    padding: 20px;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgb(214, 214, 214);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.title-user{
+    text-align: center;
+}
+.subtitle-user{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.table-user{
+    margin-top: 10px;
+    align-items: center;
+    padding: 10px;
+}

@@ -25,7 +25,7 @@ const Navbar = () => {
 
           {user && user.role === "user" && (
           <div>
-          <li><NavLink to={''}>Pembayaran</NavLink></li>
+          <li><NavLink to={'/pembayaran'}>Pembayaran</NavLink></li>
           </div>
           )}
 
@@ -38,10 +38,10 @@ const Navbar = () => {
           </div>
           )}
           
-          <li><NavLink to={''}>Profile</NavLink></li>
+          <li><NavLink to={'/profile'}>Profile</NavLink></li>
           <li className="">
-                <button className="button-nav" onClick={logout} >
-                  Log out
+                <button  className="button-nav" onClick={logout} >
+                  <NavLink>Log out</NavLink>
                 </button>
           </li>
         </ul>

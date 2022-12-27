@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "./css/user.css";
 
 const Userlist = () => {
   const [users, setUsers] = useState([]);
@@ -21,12 +22,13 @@ const Userlist = () => {
 
   return (
     <div>
-      <h1 className="title">Users</h1>
-      <h2 className="subtitle">List of Users</h2>
-      <Link to="/users/add" className="button is-primary mb-2">
+      <div className="container-user">
+      <h1 className="title-user">Users</h1>
+      <h3 className="subtitle-user">List of Users</h3>
+      <Link to="/users/add" className="button-add-user">
         Add New
       </Link>
-      <table className="table is-striped is-fullwidth">
+      <table className="table-user">
         <thead>
           <tr>
             <th>No</th>
@@ -46,13 +48,13 @@ const Userlist = () => {
               <td>
                 <Link
                   to={`/users/edit/${user.uuid}`}
-                  className="button is-small is-info"
+                  className="button-edit-user"
                 >
                   Edit
                 </Link>
                 <button
                   onClick={() => deleteUser(user.uuid)}
-                  className="button is-small is-danger"
+                  className="button-delete-user"
                 >
                   Delete
                 </button>
@@ -61,6 +63,7 @@ const Userlist = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
