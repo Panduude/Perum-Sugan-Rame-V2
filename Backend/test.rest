@@ -81,3 +81,11 @@ Content-Type: application/json
     "noRumah": "40",
     "birthDate": "22 Juni 2002"
 }
+
+###
+POST http://localhost:5000/perintah
+Content-Type: application/json
+
+{
+    "perintah": "meuli baso"
+}

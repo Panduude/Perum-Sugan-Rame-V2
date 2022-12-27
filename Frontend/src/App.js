@@ -10,6 +10,12 @@ import EditProduct from "./pages/EditProduct";
 import Berita from "./pages/Berita";
 import Profile from "./pages/Profile";
 
+import InputPerintah from "./pages/InputPerintah";
+import AddPerintah from "./pages/AddPerintah";
+import EditPerintah from "./pages/EditPerintah";
+
+
+
 function App() {
   return (
     <div>
@@ -25,6 +31,12 @@ function App() {
           <Route path="/berita" element={<Berita />} />
           <Route path="/profile" element={<Profile />} />
           {/* <Route path="/profile/update" element={<UpdateProfile />} /> */}
+
+          <Route path="/perintah" element={<InputPerintah />} />
+          <Route path="/perintah/add" element={<AddPerintah />} />
+          <Route path="/perintah/edit/:id" element={<EditPerintah />} />
+
+
         </Routes>
       </BrowserRouter>
     </div>

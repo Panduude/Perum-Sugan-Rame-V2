@@ -9,6 +9,7 @@ import ProductRoute from "./routes/ProductRoute.js";
 import BeritaRoute from "./routes/BeritaRoute.js"
 import AuthRoute from "./routes/AuthRoute.js";
 import profileRoute from "./routes/ProfileRoute.js"
+import PerintahRoute from "./routes/PerintahRoute.js";
 dotenv.config();
 
 
@@ -44,6 +45,7 @@ app.use(profileRoute);
 app.use(ProductRoute);
 app.use(BeritaRoute);
 app.use(AuthRoute);
+app.use(PerintahRoute);
 
 // store.sync();
 
