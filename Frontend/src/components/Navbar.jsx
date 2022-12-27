@@ -22,10 +22,6 @@ const Navbar = () => {
         <ul>
           <li><NavLink to={'/dashboard'}>Home</NavLink></li>
           <li><NavLink to={'/berita'}>Berita</NavLink></li>
-          <li><NavLink to={''}>Approve Keuangan</NavLink></li>
-          <li><NavLink to={''}>Buat Akun</NavLink></li>
-          <li><NavLink to={''}>Buat Perintah</NavLink></li>
-          <li><NavLink to={'/profile'}>Profile</NavLink></li>
 
           {user && user.role === "user" && (
           <div>
@@ -42,7 +38,7 @@ const Navbar = () => {
           </div>
           )}
           
-          <li><NavLink to={''}>Profile</NavLink></li>
+          <li><NavLink to={'/profile'}>Profile</NavLink></li>
           <li className="">
                 <button  className="button-nav" onClick={logout} >
                   <NavLink>Log out</NavLink>
