@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const DataProfile = () => {
+    const [msg, setMsg] = useState("");
     const [name, setName] = useState("");
     const [gender, setGender] = useState("");
     const [birthDate, setBirthDate] = useState("");

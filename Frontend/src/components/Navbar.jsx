@@ -25,7 +25,7 @@ const Navbar = () => {
 
           {user && user.role === "warga" && (
           <div>
-          <li><NavLink to={''}>Pembayaran</NavLink></li>
+          <li><NavLink to={'/pembayaran'}>Pembayaran</NavLink></li>
           </div>
           )}
 
