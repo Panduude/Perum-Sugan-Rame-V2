@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./css/user.css";
 
 const Userlist = () => {
   const [users, setUsers] = useState([]);
@@ -29,7 +28,6 @@ const Userlist = () => {
           <button className="btn-add">Add New</button>
         </Link>
         </div>
-        
         <table>
           <thead>
             <tr>

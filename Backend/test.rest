@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5000/me
+GET http://localhost:5000/keuangan
 Content-Type: application/application/json
 
 
@@ -89,5 +89,34 @@ POST http://localhost:5000/perintah
 Content-Type: application/json
 
 {
-    "perintah": "meuli baso"
+    "keterangan": "meuli sapu",
+    "nominal": "40000"
 }
+
+#perintah
+###
+PATCH http://localhost:5000/perintah/3458e987-af15-4a73-8168-45805cefede1
+Content-Type: application/json
+
+{
+    "keterangan": "meser balon 10 pack",
+    "nominal": "700000"
+}
+
+###
+GET http://localhost:5000/perintah/03538aab-3046-4c59-a616-e098d567ae31
+Content-Type: application/json
+
+###
+POST http://localhost:5000/perintah/accept
+Content-Type: application/json
+
+{
+    "keterangan": "oke",
+    "nominal": "1234"
+}
+
+
+###
+GET http://localhost:5000/perintah/03538aab-3046-4c59-a616-e098d567ae31
+Content-Type: application/json

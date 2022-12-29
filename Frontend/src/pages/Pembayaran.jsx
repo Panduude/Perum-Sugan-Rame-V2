@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Layout from "./Layout";
-import PembayaranList from "../components/PembayaranList";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getMe } from "../features/authSlice";
+// import PembayaranWarga from "../components/PembayaranWarga";
 
 const Pembayaran = () => {
     const dispatch = useDispatch();
@@ -21,7 +21,7 @@ const Pembayaran = () => {
     }, [isError, navigate]);
     return (
       <Layout>
-        <PembayaranList />
+        {/* <PembayaranWarga /> */}
       </Layout>
     );
   };

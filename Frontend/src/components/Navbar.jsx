@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import logo from "../logo.png";
 import { useDispatch, useSelector } from "react-redux";
 import { LogOut, reset } from "../features/authSlice";
 import('./css/style.css')
@@ -31,8 +30,8 @@ const Navbar = () => {
 
           {user && user.role === "admin" && (
           <div>
-          <li><NavLink to={''}>Approve Pembayaran</NavLink></li>
-          <li><NavLink to={''}>Kelola Keuangan</NavLink></li>
+          <li><NavLink to={'/approve'}>Approve Pembayaran</NavLink></li>
+          <li><NavLink to={'/keuangan'}>Kelola Keuangan</NavLink></li>
           <li><NavLink to={'/users'}>Buat Akun</NavLink></li>
           <li><NavLink to={'/perintah'}>Buat Perintah</NavLink></li>
           </div>

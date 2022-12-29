@@ -21,6 +21,19 @@ const Perintah = db.define('perintah',{
             len: [3, 100]
         }
     },
+    nominal:{
+        type: DataTypes.NUMERIC,
+        allowNull: false,
+        validate:{
+            notEmpty: true
+        }
+    },
+    statusPerintah:{
+        type: DataTypes.STRING,
+    },
+    statusApprove:{
+        type: DataTypes.STRING,
+    },
     userId:{
         type: DataTypes.INTEGER,
         allowNull: false,

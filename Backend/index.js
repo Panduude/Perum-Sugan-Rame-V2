@@ -10,6 +10,10 @@ import BeritaRoute from "./routes/BeritaRoute.js"
 import AuthRoute from "./routes/AuthRoute.js";
 import profileRoute from "./routes/ProfileRoute.js"
 import PerintahRoute from "./routes/PerintahRoute.js";
+import PembayaranRoute from "./routes/PembayaranRoute.js";
+import ApproveRoute from "./routes/ApproveRoute.js";
+import KeuanganRoute from "./routes/KeuanganRoute.js";
+
 dotenv.config();
 
 
@@ -47,6 +51,10 @@ app.use(ProductRoute);
 app.use(BeritaRoute);
 app.use(AuthRoute);
 app.use(PerintahRoute);
+app.use(PembayaranRoute);
+app.use(ApproveRoute);
+app.use(KeuanganRoute);
+
 
 // store.sync();
 

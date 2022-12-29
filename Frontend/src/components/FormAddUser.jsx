@@ -85,8 +85,7 @@ const FormAddUser = () => {
                 <div className="options">
                   <select 
                     value={role}
-                    onChange={(e) => setRole(e.target.value)}
-                  >
+                    onChange={(e) => setRole(e.target.value)}>
                     <option value="admin">Admin</option>
                     <option value="user">User</option>
                   </select>

@@ -1018,3 +1018,64 @@ input[type="submit"]:hover {
   resize: vertical;
   font-size: medium;
 }
+
+/* perintah */
+.container-perintah{
+  margin: auto;
+  width: 70%;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: block;
+  text-align: left;
+  height: 100%;
+}
+
+.container-perintah table, tr, th, td{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #caf0c7;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px 20px 40px 35px;
+}
+
+.container-perintah th{
+  width: 270px;
+}
+
+.container-perintah table{
+  margin-bottom: 40px;
+}
+
+.container-perintah h1{
+  font-family: "Pacifico";
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: #005033;
+}
+
+.btn-acc{
+  padding: 0px;
+  width: 80px;
+  height: 25px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.container-perintah .index{
+  width: 100px;
+}
+
+.container-perintah .action{
+  width: 380px;
+}
